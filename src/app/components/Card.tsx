@@ -16,6 +16,7 @@ interface CardProps {
 }
 
 interface SpringModalProps {
+  id: number,
   title: string;
   desc: string;
   bg: string;
@@ -35,7 +36,7 @@ interface SpringModalProps {
 
 const eximg = [{ img: "/ex.jpg" }, { img: "/ex1.jpg" }, { img: "/ex2.jpg" }, { img: "/ex3.jpg" }, { img: "/ex4.jpg" }, { img: "/ex5.jpg" }, { img: "/ex6.jpg" }]
 
-const Card: React.FC<CardProps> = ({ bg,imgPosition,textPosition,descPosition,buttonStyle}) => {
+const Card: React.FC<CardProps> = ({ bg,imgPosition,textPosition,descPosition,buttonStyle,id}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [title, setTitle] = useState("Trendy Fashion Essentials");
   const [desc, setDesc] = useState("Explore the latest collection of clothing and accessories.");

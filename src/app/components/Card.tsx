@@ -8,6 +8,7 @@ import Banner from "./Banner";
 import html2canvas from 'html2canvas';
 
 interface CardProps {
+  id: number,
   bg: string;
   imgPosition: React.CSSProperties;
   textPosition: React.CSSProperties;
@@ -16,7 +17,6 @@ interface CardProps {
 }
 
 interface SpringModalProps {
-  id: number,
   title: string;
   desc: string;
   bg: string;

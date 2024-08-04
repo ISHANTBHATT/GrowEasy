@@ -11,7 +11,7 @@ function Homepage() {
   return (
     <div className=' px-40 py-10'>
       <div className='flex flex-wrap  gap-10 relative justify-center'>
-      {data.map((e) => (
+      {data.map((e: any) => (
             <Card bg={e.img} imgPosition={e.imgPosition} textPosition={e.textPosition} descPosition={e.descPosition} buttonStyle={e.buttonStyle} />
         ))}
       </div>
